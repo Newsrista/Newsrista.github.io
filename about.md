@@ -1,15 +1,16 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+A high schooler looking to share his passions and interests to the world via blogs. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This blog site will mainly focus on ideas related to technology, medicine, neuroscience, and STEM in general. I will not only give you complete facts but also my own judgement and opinion. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Email: newsrista@gmail.com
+Phone: 669-400-9653
