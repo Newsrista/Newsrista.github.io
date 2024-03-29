@@ -17,7 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
                  <a href="${post.url}" class="read-more">Read More</a>
                </article>`;
                postsDiv.insertAdjacentHTML('beforeend', postElement);
+                      
+               <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+                      
+
              });
       });
   });
 });
+
