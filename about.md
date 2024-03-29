@@ -12,8 +12,8 @@ This blog site will mainly focus on ideas related to **technology**, **medicine*
 
 ### **Contact me** 
 
- [Company Mail](newsrista@gmail.com)
- 
  Phone: **669-400-9653**
+ 
+ [Company Mail](newsrista@gmail.com)
 
  [Github!](https://github.com/Newsrista)
