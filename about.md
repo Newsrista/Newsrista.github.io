@@ -8,7 +8,7 @@ Some information about you!
 
 ### More Information
 
-This blog site will mainly focus on ideas related to **technology**, **medicine**, **neuroscience**, and **STEM** in general. I will not only give you complete facts but also my own judgement and opinion. 
+This blog site will mainly focus on ideas related to technology, medicine, neuroscience, and STEM in general. I will not only give you complete facts but also my own judgement and opinion. 
 
 ### Contact me
 
