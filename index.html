@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<div class="search-container">
+    <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search..." class="search-input">
+        <button type="submit" class="search-button">
+            🔍
+        </button>
+    </form>
+</div>
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
