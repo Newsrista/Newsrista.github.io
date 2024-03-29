@@ -5,7 +5,6 @@ title: About Me
 permalink: /about/
 ---
 
-
 A high schooler looking to share his passions and interests to the world via blogs. 
 
 ### **More Information**
