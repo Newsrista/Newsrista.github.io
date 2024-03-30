@@ -85,3 +85,13 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
+plugins:
+  - jekyll-json
+
+json:
+  - scope:
+      path: ""
+    values:
+      layout: null
+    template: search_index.json

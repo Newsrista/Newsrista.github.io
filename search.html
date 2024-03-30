@@ -1,0 +1,46 @@
+---
+layout: default
+title: Search
+---
+
+<input id="search-input" type="text" placeholder="Search..."/>
+
+<ul id="search-results"></ul>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var index = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('content')
+
+    var index = this;
+    fetch('/search_index.json')
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(function(doc) {
+          index.add(doc);
+        });
+      });
+  });
+
+  document.getElementById('search-input').addEventListener('input', function() {
+    var query = this.value;
+    var results = index.search(query);
+    var resultsDisplay = document.getElementById('search-results');
+    resultsDisplay.innerHTML = '';
+    results.forEach(function(result) {
+      fetch(result.ref)
+        .then(response => response.text())
+        .then(html => {
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, "text/html");
+          var title = doc.querySelector('title').innerText;
+          var listItem = document.createElement('li');
+          listItem.innerHTML = '<a href="' + result.ref + '">' + title + '</a>';
+          resultsDisplay.appendChild(listItem);
+        });
+    });
+  });
+});
+</script>
